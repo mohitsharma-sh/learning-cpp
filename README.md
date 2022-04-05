@@ -8,3 +8,7 @@ Notes from different sources I am using to learn cpp.
     - Overloading of `>>` and `<<` operator (return types, `const`ness).
     - Return types of overloaded operators (why `+=` should return a self reference)
     - `iostream`, `fstream`
+
+2. Homework 2
+    - Core Concepts: Abstract Classes, Polymorphism, Inheritence
+    - C++: `virtual`, `pure virtual`, `protected`, `std::initializer_list`
