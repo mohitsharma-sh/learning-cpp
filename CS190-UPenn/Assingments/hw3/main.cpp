@@ -7,6 +7,10 @@ int main()
     std::cout << "Finding " << 10 << " Result=" << root->search(10) << std::endl;
     
     std::cout << "Finding " << 11 << " Result=" << root->search(11) << std::endl;
+
+    // See copy constructor
+    node* new_root = new node {*root};
     delete root;
+    delete new_root;
     return 0;
 }

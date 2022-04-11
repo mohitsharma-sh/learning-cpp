@@ -3,10 +3,13 @@
 
 node::node(int val) : val {val} // Constructor
 {
+    std::cout << "Constructor" << std::endl;
 }
 
 node::node(node const& source) // Copy Constructor
 {
+
+    std::cout << "Copy Constructor" << std::endl;
     val = source.val;
     if (source.left)
     {
@@ -20,6 +23,8 @@ node::node(node const& source) // Copy Constructor
 
 node::node(node&& source) // Move Constructor
 {
+
+    std::cout << "Move Constructor" << std::endl;
     val = source.val;
     left = source.left;
     right = source.right;
@@ -30,6 +35,8 @@ node::node(node&& source) // Move Constructor
 
 node& node::operator=(node const& rhs) // Copy Assignment Operator
 {
+
+    std::cout << "Copy Assignment" << std::endl;
     val = rhs.val;
     if (rhs.left)
     {
@@ -47,6 +54,7 @@ node& node::operator=(node const& rhs) // Copy Assignment Operator
 node& node::operator=(node&& rhs) // Move Assignment Operator
 {
     
+    std::cout << "Move Assignment" << std::endl;
     val = rhs.val;
     left = rhs.left;
     right = rhs.right;
