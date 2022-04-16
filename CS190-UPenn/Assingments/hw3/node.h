@@ -1,13 +1,15 @@
 #pragma once
+#include<iostream>
 
 class node
 {
 private:
-    int val;
+    int val = 0;
     node* left = nullptr;
     node* right = nullptr;
 public:
-    node(int);
+    node();                           // Default Constructor
+    node(int);                          // Constructor
     ~node();                            // Destructor
     node(node const& rhs);              // Copy Constructor
     node(node&& rhs);                   // Move Constructor
@@ -16,4 +18,13 @@ public:
 
     bool search(int) const;
     void insert(int);
+
+    node operator+(int i) const;
+    node& operator+=(int i);
+
+    friend std::ostream& operator<<(std::ostream& os, node const& tree);
+    friend std::istream& operator>>(std::istream& in, node& tree);
 };
+
+std::ostream& operator<<(std::ostream& os, node const& tree);
+std::istream& operator>>(std::istream& in, node& tree);
