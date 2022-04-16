@@ -12,3 +12,7 @@ Notes from different sources I am using to learn cpp.
 2. Homework 2
     - Core Concepts: Abstract Classes, Polymorphism, Inheritence
     - C++: `virtual`, `pure virtual`, `protected`, `std::initializer_list`
+
+3. Homework 3
+    - Core concepts: Rule of five, move semantics, valgrind
+    - C++: `lvalue`, `rvalue`, `lvalue reference`, `rvalue reference`, `std::move`
