@@ -16,3 +16,6 @@ Notes from different sources I am using to learn cpp.
 3. Homework 3
     - Core concepts: Rule of five, move semantics, valgrind
     - C++: `lvalue`, `rvalue`, `lvalue reference`, `rvalue reference`, `std::move`
+
+4. Homework 4
+    - [Copy-and-Swap Idiom](https://cpppatterns.com/patterns/copy-and-swap.html)
